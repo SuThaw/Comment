@@ -34,7 +34,15 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+  'get /signin':{
+    view:'login'
+  },
+  'get /feedback':'CommentController.detail',
+  'post /signin':'UserController.signin',
+  'get /signout':'UserController.signout'
+    
+
 
   /***************************************************************************
   *                                                                          *

@@ -6,6 +6,11 @@
  */
 
 module.exports = {
+	detail:function(req,res){
+		Comment.find({}).exec(function(err,comment){
+			return res.view('comment',{comments: comment});
+		});	
+	},
 	
 };
 

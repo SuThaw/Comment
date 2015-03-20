@@ -1,0 +1,18 @@
+
+	<h3>Comment System</h3>
+	<h1><%if(req.session.user){%><%=req.session.user %> <%}%></h1>
+	<form class="form-horizontal" action="/user" method="post">
+		<div class="form-group">
+            <input type="text" placeholder="name" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+			<input type="email" placeholder="email" class="form-control" name="email">
+        </div>
+        <div class="form-group">
+			<input type="password" placeholder="password" class="form-control" name="password">
+        </div>
+        <div class="form-group">
+			<input type="submit" class="btn btn-success" value="Sign Up">
+		</div>
+		
+	</form>
